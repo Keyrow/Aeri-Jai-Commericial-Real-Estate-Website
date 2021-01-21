@@ -1,0 +1,203 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    color: azure;
+}
+
+.container {
+	width: 100%;
+    margin: 0;
+}
+
+header {
+    background: white;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding-top: 1px;
+}
+
+nav {
+    float: right;
+}
+
+.navlink {
+    text-decoration: none;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 120px;
+    padding-top: 23px;
+    position: relative;
+}
+
+nav a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* Home Page Section*/
+
+#main-section-one {
+    position: relative;
+}
+
+.foodone {
+    width: 100%;
+}
+
+.homeText {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    color: honeydew;
+    width: 1100px;
+}
+
+/* About Page Section */
+.aboutText {
+    color: white;
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+/* Footer Section on About Me */
+.footer {
+    background: #333;
+    color: white;
+    padding: 0em;
+
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+}
+
+.socials a:hover i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: aqua;
+}
+
+.footer-bottom {
+    background: #000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/* Categories Page Section */
+
+/* FAQ Page Section */
+.faqText {
+    color: white;
+    width: 80%;
+    padding-left: 5%;
+    padding-top: 5%;
+}
